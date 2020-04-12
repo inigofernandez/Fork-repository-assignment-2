@@ -1,8 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## INIGO FERNANDEZ SANCHEZ
 
 ## makecachematrix is the function which creates the matrix and the list for the values
-## INIGO FERNANDEZ SANCHEZ
+
 
 makeCacheMatrix <- function(x = matrix()) {
         I <- NULL
@@ -30,8 +29,8 @@ cacheSolve <- function(x, ...) {
                     print("The inverse has been calculated before, using cache memory")
     return(I)
   }
-      mat <- x$get()
-       I <- solve(mat, ...)
+      matrix <- x$get()
+       I <- solve(matrix, ...)
        x$setInverse(I)
        I
 }
